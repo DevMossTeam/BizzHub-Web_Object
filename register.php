@@ -135,6 +135,28 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         .auth-box p a:hover {
             text-decoration: underline;
         }
+
+        .auth-box .separator {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .auth-box .separator::before,
+        .auth-box .separator::after {
+            content: '';
+            flex: 1;
+            border-bottom: 1px solid #ccc;
+        }
+
+        .auth-box .separator:not(:empty)::before {
+            margin-right: .25em;
+        }
+
+        .auth-box .separator:not(:empty)::after {
+            margin-left: .25em;
+        }
     </style>
 </head>
 <body>
@@ -151,7 +173,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 <input type="password" name="confirm_password" placeholder="Confirm Password" required>
                 <button type="submit">Continue</button>
             </form>
-            <p>or use another method</p>
+            <div class="separator">or use another method</div>
             <button class="google-btn" onclick="googleAuth()">
                 <img src="https://img.icons8.com/color/48/000000/google-logo.png" alt="Google Logo">
                 Lanjutkan dengan Google

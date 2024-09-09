@@ -126,6 +126,15 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             margin-top: 10px;
             text-align: center;
         }
+
+        .auth-box p a {
+            color: #007bff; /* Warna teks biru */
+            text-decoration: none;
+        }
+
+        .auth-box p a:hover {
+            text-decoration: underline;
+        }
     </style>
 </head>
 <body>

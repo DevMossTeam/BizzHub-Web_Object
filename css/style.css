@@ -15,32 +15,23 @@ aside,
 header {
     display: flex;
     justify-content: flex-end;
-    /* Pindahkan konten header ke kanan */
     align-items: center;
     background-color: rgba(51, 51, 51, 0.8);
-    /* Warna sedikit tembus pandang */
     color: #fff;
     position: fixed;
     top: 10px;
-    /* Beri jarak dari atas */
     right: 10px;
-    /* Beri jarak dari kanan */
     width: 480px;
-    /* Perpendek ukuran horizontal header */
     height: 20px;
-    /* Tinggi header dikurangi */
     z-index: 1000;
     backdrop-filter: blur(10px);
-    /* Efek blur */
     -webkit-backdrop-filter: blur(10px);
     border-radius: 5px;
-    /* Tambahkan border-radius untuk tampilan lebih baik */
 }
 
 @media (min-width: 768px) {
     header {
         width: calc(100% - 280px);
-        /* Lebar header lebih besar untuk layar lebar */
     }
 }
 
@@ -48,19 +39,15 @@ header .logo {
     display: flex;
     align-items: center;
     gap: 10px;
-    /* Menambahkan jarak antara logo dan teks */
 }
 
 header .logo img {
-    height: 30px;
-    /* Memperkecil logo */
+    height: 50px;
 }
 
 header .logo span {
-    font-size: 18px;
-    /* Ukuran teks BizzHub dikurangi */
+    font-size: 24px;
     color: #fff;
-    /* Warna teks */
 }
 
 header nav ul {
@@ -76,7 +63,6 @@ header nav ul li a {
 
 header .user-menu {
     margin-right: 20px;
-    /* Memindahkan teks lebih ke kiri */
 }
 
 header .user-menu a {
@@ -90,11 +76,9 @@ aside {
     background-color: #f4f4f4;
     position: fixed;
     top: 0;
-    /* Pindahkan sidebar lebih tinggi ke atas */
     left: 0;
     bottom: 0;
     padding-top: 20px;
-    /* Tambahkan padding untuk menghindari header */
 }
 
 aside ul {
@@ -109,44 +93,43 @@ aside ul li {
 aside ul li a {
     text-decoration: none;
     color: #333;
+    cursor: pointer;
 }
 
 aside ul li ul.submenu {
-    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
     list-style: none;
     padding-left: 20px;
 }
 
-aside ul li:hover ul.submenu {
-    display: block;
+aside ul li ul.submenu.show {
+    max-height: 500px;
+    /* Adjust as needed */
 }
 
 aside .logo {
     display: flex;
     align-items: center;
     gap: 10px;
-    /* Menambahkan jarak antara logo dan teks */
     padding: 10px 20px;
-    /* Menambahkan padding untuk logo */
 }
 
 aside .logo img {
     height: 30px;
-    /* Ukuran logo */
 }
 
 aside .logo span {
     font-size: 18px;
-    /* Ukuran teks BizzHub */
     color: #333;
-    /* Warna teks */
 }
 
 .content {
-    margin-left: 180px;
-    /* Sesuaikan dengan lebar sidebar */
-    padding-top: 50px;
-    /* Sesuaikan dengan tinggi header dan jarak dari atas */
+    margin-left: 200px;
+    padding-top: 100px;
+    padding-left: 40px;
+    padding-bottom: 20px;
 }
 
 .auth-container {
@@ -189,18 +172,6 @@ aside .logo span {
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
-
-.auth-box p {
-    margin-top: 10px;
-}
-
-.auth-box p {
-    margin-top: 10px;
-}
-
-.auth-box p {
-    margin-top: 10px;
 }
 
 .auth-box p {

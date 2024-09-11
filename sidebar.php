@@ -27,8 +27,8 @@
                 <li><a onclick="loadPage('keuangan/pembayaran.php')"><i class="fas fa-credit-card"></i> Pembayaran</a></li>
             </ul>
         </li>
-        <li><a href="index.php?page=sales_report"><i class="fas fa-chart-line"></i> Laporan Penjualan</a></li>
-        <li><a href="index.php?page=help"><i class="fas fa-question-circle"></i> Bantuan</a></li>
+        <li><a onclick="loadPage('laporan_penjualan.php')"><i class="fas fa-chart-line"></i> Laporan Penjualan</a></li>
+        <li><a onclick="loadPage('bantuan.php')"><i class="fas fa-question-circle"></i> Bantuan</a></li>
     </ul>
 </aside>
 <script src="js/script.js"></script>

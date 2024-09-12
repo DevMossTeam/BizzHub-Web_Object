@@ -1,8 +1,4 @@
 <aside>
-    <div class="logo">
-        <img src="assets/website-logo/Bizzhub-logo.png" alt="Bizzhub Logo">
-        <span>BizzHub</span> <!-- Menambahkan teks BizzHub -->
-    </div>
     <ul>
         <li><a href="index.php?page=dashboard"><i class="fas fa-tachometer-alt"></i> Dashboard</a></li>
         <li>
@@ -31,4 +27,5 @@
         <li><a onclick="loadPage('bantuan.php')"><i class="fas fa-question-circle"></i> Bantuan</a></li>
     </ul>
 </aside>
-<script src="js/script.js"></script>
+<script src="js/main.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">

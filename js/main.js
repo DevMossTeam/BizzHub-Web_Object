@@ -1,8 +1,3 @@
-function googleAuth() {
-    // Implement Google Authentication here
-    alert("Google Authentication not implemented yet.");
-}
-
 document.addEventListener('DOMContentLoaded', function() {
     const submenuLinks = document.querySelectorAll('aside ul li > a');
 
